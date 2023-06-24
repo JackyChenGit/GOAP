@@ -56,15 +56,15 @@ namespace CrashKonijn.Goap.Classes.References
             return this.references[type];
         }
 
-        [System.Obsolete("'GetComponent<T>' is deprecated, please use 'GetCachedComponent<T>' instead.   Exact same functionality, name changed to better communicate code usage.")]
-        public T GetComponent<T>()
-            where T : MonoBehaviour
-        {
-            return (T) this.GetCachedComponentReference(typeof(T));
-        }
+        // [System.Obsolete("'GetComponent<T>' is deprecated, please use 'GetCachedComponent<T>' instead.   Exact same functionality, name changed to better communicate code usage.")]
+        // public T GetComponent<T>()
+        //     where T : MonoBehaviour
+        // {
+        //     return (T) this.GetCachedComponentReference(typeof(T));
+        // }
         
         public T GetCachedComponent<T>()
-            where T : MonoBehaviour
+            // where T : MonoBehaviour
         {
             return (T)this.GetCachedComponentReference(typeof(T));
         }
@@ -79,14 +79,14 @@ namespace CrashKonijn.Goap.Classes.References
             return this.references[type];
         }
 
-        [System.Obsolete("'GetComponentInChildren<T>' is deprecated, please use 'GetCachedComponentInChildren<T>' instead.   Exact same functionality, name changed to better communicate code usage.")]
-        public T GetComponentInChildren<T>()
-            where T : MonoBehaviour
-        {
-            return (T) this.GetCachedComponentInChildrenReference(typeof(T));
-        }
+        // [System.Obsolete("'GetComponentInChildren<T>' is deprecated, please use 'GetCachedComponentInChildren<T>' instead.   Exact same functionality, name changed to better communicate code usage.")]
+        // public T GetComponentInChildren<T>()
+        //     where T : MonoBehaviour
+        // {
+        //     return (T) this.GetCachedComponentInChildrenReference(typeof(T));
+        // }
         public T GetCachedComponentInChildren<T>()
-            where T : MonoBehaviour
+            // where T : MonoBehaviour
         {
             return (T)this.GetCachedComponentInChildrenReference(typeof(T));
         }
